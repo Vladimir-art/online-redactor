@@ -2,7 +2,7 @@
   margin: 5px 0 5px;
   padding: 0;
   width: 100%;
-  height: 33px;
+  min-height: 33px;
   outline: none;
   border: none;
   box-shadow: 6px 6px 0 rgba(47, 128, 237, .3);

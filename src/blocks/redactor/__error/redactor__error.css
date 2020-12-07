@@ -1,0 +1,13 @@
+.redactor__error {
+  margin: 3px 0 0;
+  padding: 0;
+  min-height: 30px;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #d82f54;
+  visibility: hidden;
+}
