@@ -1,6 +1,5 @@
 import React from 'react';
 import Redactor from './Redactor';
-import Readctor from './Redactor';
 
 function Main() {
   return (
