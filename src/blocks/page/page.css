@@ -11,6 +11,7 @@
   -moz-osx-font-smoothing: grayscale;
   color: #FFF;
   position: relative;
+  overflow: hidden;
   }
 
 .page::after {
