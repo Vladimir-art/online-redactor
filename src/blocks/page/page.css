@@ -15,20 +15,37 @@
 
 .page::after {
   position: absolute;
-  top: -60px;
+  top: -100px;
   left: 0;
   content: '';
   background-image: url(../../images/triangle.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border: 0;
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
   animation: rotation 20s linear infinite;
+}
+
+.page::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  height: 400px;
+  width: 400px;
+  background-color: #2F80ED;
+  animation: antirotation 25s linear infinite;
 }
 
 @keyframes rotation {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes antirotation {
+  to {
+    transform: rotate(-360deg);
   }
 }
