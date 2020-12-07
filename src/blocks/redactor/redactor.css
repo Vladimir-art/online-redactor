@@ -4,3 +4,10 @@
 @import url(./__name/redactor__name.css);
 @import url(./__input/redactor__input.css);
 @import url(./__error/redactor__error.css);
+
+
+.redactor {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 60%;
+}
