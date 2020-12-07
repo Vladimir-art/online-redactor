@@ -15,6 +15,7 @@
 
 .page::after {
   position: absolute;
+  z-index: 0;
   top: -100px;
   left: 0;
   content: '';
@@ -25,10 +26,12 @@
   width: 600px;
   height: 600px;
   animation: rotation 20s linear infinite;
+  opacity: .25;
 }
 
 .page::before {
   position: absolute;
+  z-index: 0;
   bottom: 0;
   right: 0;
   content: '';
@@ -36,6 +39,7 @@
   width: 400px;
   background-color: #2F80ED;
   animation: antirotation 25s linear infinite;
+  opacity: .35;
 }
 
 @keyframes rotation {
