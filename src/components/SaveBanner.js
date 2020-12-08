@@ -6,13 +6,13 @@ import json from '../images/json.svg';
 function SaveBanner() {
   return (
     <section className="save">
-      <a href="/" className="save__download" download="kkk">
+      <a href="/" className="save__download" >
         <img className="save__image" src={file} alt="PNG" />
       </a>
-      <a href="/" className="save__download" download="kkk">
+      <a href="/" className="save__download" >
         <img className="save__image" src={html} alt="HTML" />
       </a>
-      <a href="/" className="save__download" download="kkk">
+      <a href="/" className="save__download" >
         <img className="save__image" src={json} alt="json" />
       </a>
     </section>
