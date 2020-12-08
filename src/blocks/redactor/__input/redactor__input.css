@@ -1,11 +1,19 @@
 .redactor__input {
   margin: 5px 0 5px;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 3px;
   width: 100%;
   min-height: 33px;
   outline: none;
   border: none;
   box-shadow: 6px 6px 0 rgba(47, 128, 237, .3);
+
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+
   transform: all .4s ease;
 }
 
@@ -15,4 +23,13 @@
 
 .redactor__input:focus {
   box-shadow: 6px 6px 0 rgba(181, 41, 236, .3);
+}
+
+.redactor__input::placeholder {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #4B5D68;
 }
