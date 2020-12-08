@@ -1,0 +1,15 @@
+.constructor__text {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  /* height: 10%; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "Roboto", Arial, sans-serif;;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 110%;
+  text-align: left;
+  color: #FFF;
+}
