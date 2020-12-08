@@ -4,10 +4,12 @@
 
 .constructor {
   margin: 0;
-  padding: 0;
-  width: 20%;
-  height: inherit;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 25%;
+  height: 500px;
   background: #FFC0CB;
   border-radius: 16px;
-  box-shadow: 10px 10px 5px #FFF;
+  /* box-shadow: 10px 10px 0 #FFF; */
+  overflow: hidden;
 }

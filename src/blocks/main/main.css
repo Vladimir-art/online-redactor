@@ -1,5 +1,8 @@
 .main {
   margin: 0 auto;
   padding: 0;
-  max-width: 1440px;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
