@@ -1,10 +1,11 @@
 import React from 'react';
+import image from '../images/illustration.jpg';
 
 function Constructor() {
   return (
     <section className="constructor">
       <a className="constructor__link" href="/">
-        <img className="constructor__image" src="https://lh3.googleusercontent.com/proxy/hr3RgLjcRSvdVLLTuiVsyMLVf1nx93IvF-aKx5Hgb8tQ6Gwd9RkFA5l61OMh-T7Tok8gryl0aw6CFpnIK3bgrX7KC_fu21Zv8S1ZxPSU5S31lsPY0fp15etwbGxOPZjvXU_U" alt="Изображение" />
+        <img className="constructor__image" src="https://img.pngio.com/adobe-illustrator-tutorial-create-vinyl-wall-art-digital-arts-adobe-illustrator-tutorials-png-1040_538.png" alt="Изображение" />
         <h3 className="constructor__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis massa augue,
           nec tincidunt tortor molestie nec. Fusce vel neque venenatis, ullamcorper magna ut,

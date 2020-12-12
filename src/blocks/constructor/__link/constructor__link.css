@@ -4,4 +4,7 @@
   text-decoration: none;
   width: 100%;
   height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
