@@ -1,6 +1,15 @@
+import { set } from 'mobx';
+import { observer } from 'mobx-react-lite';
 import React from 'react';
+import Store from '../store/Store';
 
-function Redactor() {
+const Redactor = observer(() => {
+
+  function validIllustrationLink(event) {
+    event.target.validity.valid &&
+      Store.createIllustration(event.target.value);
+  }
+
   return (
     <section className="redactor">
       <h1 className="redactor__title">Let's create a new banner!</h1>
@@ -12,6 +21,7 @@ function Redactor() {
               name="illustration"
               type="url"
               placeholder="Enter illustration"
+              onChange={validIllustrationLink}
               required></input>
             <span className="redactor__error">Sorry, I can't find this illustration</span>
           </label>
@@ -47,5 +57,6 @@ function Redactor() {
       </form>
     </section>
   )
-}
+})
+
 export default Redactor;

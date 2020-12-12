@@ -10,7 +10,10 @@ class Store {
     makeAutoObservable(this);
   }
 
-
+  createIllustration(value) {
+    this.illustration = value;
+    console.log(this.illustration);
+  }
 
 }
 
