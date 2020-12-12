@@ -2,8 +2,11 @@ import React from 'react';
 import Redactor from './Redactor';
 import Constructor from './Constructor';
 import SaveBanner from './SaveBanner';
+import { observer } from 'mobx-react-lite';
+import Store from '../store/Store';
 
-function Main() {
+const Main = observer(() => {
+  console.log(Store);
   return (
     <main className="main">
       <Redactor />
@@ -11,5 +14,6 @@ function Main() {
       <SaveBanner />
     </main>
   )
-}
+})
+
 export default Main;
