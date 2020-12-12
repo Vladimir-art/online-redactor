@@ -3,8 +3,13 @@ import React from 'react';
 import Store from '../store/Store';
 
 const Constructor = observer(() => {
+
+  React.useEffect(() => {
+    document.querySelector('.constructor').style.background = `#${Store.color}`;
+  }, [Store.color]);
+
   return (
-    <section className="constructor">
+  <section className="constructor">
       <a className="constructor__link" href="/">
         <img className="constructor__image" src={Store.illustration} alt="Изображение" />
         <h3 className="constructor__text">

@@ -27,6 +27,10 @@ class Store {
     this.text = value;
   }
 
+  changeColor(value) {
+    this.color = value;
+  }
+
 }
 
 export default new Store();

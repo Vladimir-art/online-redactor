@@ -10,6 +10,10 @@ const Redactor = observer(() => {
       Store.createIllustration(event.target.value);
   }
 
+  function validColor(e) {
+    e.target.validity.valid && Store.changeColor(e.target.value);
+  }
+
   return (
     <section className="redactor">
       <h1 className="redactor__title">Let's create a new banner!</h1>
@@ -40,8 +44,10 @@ const Redactor = observer(() => {
             <input className="redactor__input"
               id="background"
               name="background"
+              minLength="6"
               maxLength="6"
               placeholder="FFFFFF"
+              onChange={validColor}
               required></input>
             <span className="redactor__error">The text is not correctly</span>
           </label>
