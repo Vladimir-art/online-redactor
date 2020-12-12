@@ -32,6 +32,7 @@ const Redactor = observer(() => {
               minLength="3"
               maxLength="255"
               placeholder="Enter some text"
+              onChange={(e) => Store.changeText(e.target.value)}
               required></textarea>
             <span className="redactor__error">The text is so small</span>
           </label>

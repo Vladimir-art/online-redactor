@@ -8,9 +8,7 @@ const Constructor = observer(() => {
       <a className="constructor__link" href="/">
         <img className="constructor__image" src={Store.illustration} alt="Изображение" />
         <h3 className="constructor__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis massa augue,
-          nec tincidunt tortor molestie nec. Fusce vel neque venenatis, ullamcorper magna ut,
-          efficitur quam.
+          {Store.text}
         </h3>
       </a>
     </section>
