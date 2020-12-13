@@ -18,6 +18,11 @@ const Redactor = observer(() => {
     e.target.validity.valid && Store.changeLink(e.target.value);
   }
 
+  function clearAll(e) {
+    e.target.parentElement.reset();
+    Store.clearInputs();
+  }
+
   return (
     <section className="redactor">
       <h1 className="redactor__title">Let's create a new banner!</h1>
@@ -66,6 +71,7 @@ const Redactor = observer(() => {
             <span className="redactor__error">Sorry, I can't find this link</span>
           </label>
         </fieldset>
+        <button className="redactor__clear" onClick={clearAll}>Clear</button>
       </form>
     </section>
   )

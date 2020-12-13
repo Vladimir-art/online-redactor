@@ -1,0 +1,28 @@
+.redactor__clear {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+
+  box-shadow: 6px 6px 0 rgba(237, 47, 212, 0.3);
+
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  cursor: pointer;
+  color: #38505f;
+
+  transition: all .3s ease;
+}
+
+.redactor__clear:hover {
+  box-shadow: 6px 6px 0 rgba(212, 20, 100, 0.3);
+}
+
+.redactor__clear:focus {
+  box-shadow: 6px 6px 0 rgba(212, 20, 100, 0.3);
+}

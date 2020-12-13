@@ -10,7 +10,7 @@ const Constructor = observer(() => {
 
   return (
   <section className="constructor">
-      <a className="constructor__link" href={Store.product}>
+      <a className="constructor__link" href={Store.product} target="_blank">
         <img className="constructor__image" src={Store.illustration} alt="Изображение" />
         <h3 className="constructor__text">
           {Store.text}

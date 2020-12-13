@@ -35,6 +35,13 @@ class Store {
     this.product = value;
   }
 
+  clearInputs() {
+    this.illustration = 'https://img.pngio.com/adobe-illustrator-tutorial-create-vinyl-wall-art-digital-arts-adobe-illustrator-tutorials-png-1040_538.png';
+    this.text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis massa augue, nec tincidunt tortor molestie nec. Fusce vel neque venenatis, ullamcorper magna';
+    this.color = 'FFC0CB';
+    this.product = '/';
+  }
+
 }
 
 export default new Store();

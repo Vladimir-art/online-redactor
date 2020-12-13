@@ -4,6 +4,7 @@
 @import url(./__name/redactor__name.css);
 @import url(./__input/redactor__input.css);
 @import url(./__error/redactor__error.css);
+@import url(./__clear/redactor__clear.css);
 
 
 .redactor {
