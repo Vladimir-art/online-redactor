@@ -6,7 +6,6 @@ import { observer } from 'mobx-react-lite';
 import Store from '../store/Store';
 
 const Main = observer(() => {
-  console.log(Store);
   return (
     <main className="main">
       <Redactor />
