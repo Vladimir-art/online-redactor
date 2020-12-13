@@ -7,7 +7,7 @@ import html2canvas from 'html2canvas';
 function SaveBanner() {
 
   function saveSectionAsImage(e) {
-    html2canvas(document.querySelector('.constructor'), { proxy: false, useCORS: true })
+    html2canvas(document.querySelector('.constructor'), { proxy: false, useCORS: true, scrollX: 0, scrollY: -window.scrollY })
       .then((canvas) => {
         const linkTag = e.target.parentElement;
         linkTag.href = canvas.toDataURL('image/png');
@@ -44,25 +44,6 @@ function SaveBanner() {
     document.body.removeChild(textarea);
     alert(`copied successfully as ${e.target.alt}!`);
   }
-
-  // function CopyToClipboardJSON() {
-  //   // Create a new textarea element and give it id='t'
-  //   let textarea = document.createElement('textarea');
-  //   textarea.id = 't';
-  //   // Optional step to make less noise on the page, if any!
-  //   textarea.style.height = 0;
-  //   // Now append it to your page somewhere, I chose <body>
-  //   document.body.appendChild(textarea);
-  //   // Give our textarea a value of whatever inside the div of id=containerid
-  //   textarea.value = JSON.stringify(document.querySelector('.constructor').innerHTML);
-  //   // Now copy whatever inside the textarea to clipboard
-  //   let selector = document.querySelector('#t');
-  //   selector.select();
-  //   document.execCommand('copy');
-  //   // Remove the textarea
-  //   document.body.removeChild(textarea);
-  //   alert('copied successfully as JSON!');
-  // }
 
   return (
     <section className="save">
