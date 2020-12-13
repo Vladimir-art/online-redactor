@@ -19,9 +19,9 @@
 Исходный код можно скачать (```git clone ```) и запустить локально (```npm install && npm start```). После запуска приложение доступно в браузере по адресу ```localhost:3999```
 
 **Образец работы сайта:**
-![главная страница](/)
+![главная страница](https://raw.githubusercontent.com/Vladimir-art/online-redactor/main/src/images/preview.png)  
 
 #### *Как со мной связаться*
-Почта ```vl.ermolaevv@yandex.ru``` Владимир Ермолаев
-Telegram ```@artVladimir```
-Спасибо)
+Почта ```vl.ermolaevv@yandex.ru``` Владимир Ермолаев  
+Telegram ```@artVladimir```  
+Спасибо)  
