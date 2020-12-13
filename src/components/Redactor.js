@@ -14,6 +14,10 @@ const Redactor = observer(() => {
     e.target.validity.valid && Store.changeColor(e.target.value);
   }
 
+  function validLink(e) {
+    e.target.validity.valid && Store.changeLink(e.target.value);
+  }
+
   return (
     <section className="redactor">
       <h1 className="redactor__title">Let's create a new banner!</h1>
@@ -57,6 +61,7 @@ const Redactor = observer(() => {
               name="link"
               type="url"
               placeholder="Enter a link"
+              onChange={validLink}
               required></input>
             <span className="redactor__error">Sorry, I can't find this link</span>
           </label>

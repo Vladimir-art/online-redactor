@@ -31,6 +31,10 @@ class Store {
     this.color = value;
   }
 
+  changeLink(value) {
+    this.product = value;
+  }
+
 }
 
 export default new Store();
